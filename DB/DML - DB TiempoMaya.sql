@@ -1,4 +1,4 @@
-USE 'tiempomaya';
+USE 'tiempo_maya';
 
 --
 -- Base de datos: `tiempomaya`

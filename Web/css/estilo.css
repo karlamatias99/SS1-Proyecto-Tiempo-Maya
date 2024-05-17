@@ -107,9 +107,25 @@ h1, h2, h3, h4, h5, h6 {
 #inicio {
   width: 100%;
   height: 100vh;
-  background: url(../img/fondo.png) top center;
   background-size: cover;
   position: relative;
+}
+
+/* Estilo adicional para el fondo durante la mañana */
+#inicio.fondo-manana {
+  background-image: url('../img/tikal_amanecer.jpg');
+  
+}
+
+/* Estilo adicional para el fondo durante el día */
+#inicio.fondo-tarde {
+  background-image: url('../img/fondo.png');
+}
+
+
+/* Estilo adicional para el fondo durante la noche */
+#inicio.fondo-noche {
+  background-image: url('../img/Tikal_noche.jpg');
 }
 
 @media (min-width: 1024px) {
@@ -306,7 +322,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   text-transform: uppercase;
   outline: none;
-  font-size: larger;
+  font-size: 18px;
 }
 
 .nav-menu > li {
@@ -400,3 +416,4 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 13px;
   color: #ccc;
 }
+

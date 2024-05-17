@@ -1,0 +1,97 @@
+
+.contenedor-imagenes {
+  position: relative;
+  width: 20%;
+  /* Ancho del contenedor de imágenes */
+  margin: 100px auto;
+  left: 80px;
+  
+}
+#formulario {
+  position: relative;
+  z-index: 2; /* Asegura que el formulario esté sobre el cuadro de fondo */
+}
+
+/*Cuadro que va detras de la imagen*/
+.color-background {
+  position: absolute;
+  top: 80;
+  left: 250;
+  width: 70%;
+  height: 87%;
+  background-color: #918f8f;
+  z-index: 0; 
+  opacity: 0.4;
+}
+
+
+
+.imagen {
+  display: block;
+  height: auto;
+  transition: transform 0.5s ease; /* Agrega una transición suave */
+  
+}
+
+/*Imagen de la rueda con numeros */
+.imagen-numeros {
+  position: absolute;
+  left: 50%;
+  transform: translate(-100%, -40%);
+  width: 65%; /* Ancho máximo de las imágenes */
+  top: 100%; /* Desplazamiento hacia abajo */
+  z-index: 2;
+}
+
+/*Imagen de la segunda rueda (Tzolqin)*/
+.imagen-tzolqin {
+  position: absolute;
+  right: 50%;
+  transform: translate(100%, -47%);
+  width: 120%;  /* Ancho de la imagen */
+  top: 20%; /* Desplazamiento hacia abajo */
+  z-index: 2;
+}
+
+/*Imagen del Haab*/
+.imagen-haab {
+  position: absolute;
+  right: -90%;
+  transform: translate(100%, -47%);
+  width: 20%;  /* Ancho de la imagen */
+  top: 20%; /* Desplazamiento hacia abajo */
+  z-index: 2;
+}
+
+/*Imagen del engranaje de Haab*/
+.imagen-engranaje{
+  position: absolute;
+  right: -73%;
+  transform: translate(100%, -48%);
+  width: 3%;  /* Ancho de la imagen */
+  top: 20%; /* Desplazamiento hacia abajo */
+  z-index: 2;
+}
+
+/*Imagen del numero de Haab*/
+.imagen-haab-dia {
+  position: absolute;
+  right: -75%;
+  transform: translate(100%, -47%);
+  width: 14%;  /* Ancho de la imagen */
+  top: 20%; /* Desplazamiento hacia abajo */
+  z-index: 2;
+}
+
+/*Metodo para el resaltado*/
+.resaltado-numeros {
+  position: absolute; /* Ajusta la posición horizontalmente */
+  left: 26%;
+  top: 0px; /* Ajusta el ancho del resaltado */
+  width: 62%; /* Ajusta la altura del resaltado */
+  height: 100%;
+  border: 16px solid rgba(4, 75, 59, 0.3);
+  pointer-events: none; /* Evita que el resaltado interfiera con los eventos del mouse */
+  box-sizing: border-box; /* Incluye el borde en las dimensiones del resaltado */
+  z-index: 2;
+}

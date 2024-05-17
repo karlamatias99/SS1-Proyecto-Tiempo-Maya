@@ -15,7 +15,7 @@ $periodosNav = $conn->query("SELECT nombre FROM tiempo_maya.periodo order by ord
   <div class="container">
     <nav class="navbar navbar-expand-lg" id="nav-menu-container">
       <div class="container-fluid">
-        <a id="title" class="navbar-brand" href="../index.php" style="color: white;font-size: 24px;"><strong>TIEMPO</strong> MAYA</a>
+        <a id="title" class="navbar-brand" href="../index.php" style="color: white;font-size: 20px;"><strong>TIEMPO</strong> MAYA</a>
         <button class="navbar-toggler" type="button" onclick="rellenar()" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span><i style="color: white;" class="fas fa-bars"></i></span>
         </button>
@@ -99,7 +99,11 @@ $periodosNav = $conn->query("SELECT nombre FROM tiempo_maya.periodo order by ord
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../models/paginaModelo.php?pagina=Rueda Calendarica">Rueda Calendarica</a>
+              <a class="nav-link" href="../rueda_calendarica.php">Rueda Calendarica</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../cuentaLarga_grafica.php">Cuenta Larga Grafica</a>
             </li>
             
             <li class="nav-item"><a class="nav-link" href="../calculadora.php">Calculadora</a></li>

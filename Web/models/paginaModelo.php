@@ -22,6 +22,7 @@ $elementos = $conn->query("SELECT nombre FROM tiempo_maya.pagina WHERE categoria
     <link rel="stylesheet" href="../css/estilo.css?v=<?php echo (rand()); ?>" />
     <link rel="stylesheet" href="../css/paginaModelo.css?v=<?php echo (rand()); ?>" />
 
+    <script src="../js/fondoDinamico.js"></script>
 
 </head>
 <?php include "../NavBar2.php" ?>
@@ -80,7 +81,11 @@ $elementos = $conn->query("SELECT nombre FROM tiempo_maya.pagina WHERE categoria
 
     <?php include "../blocks/bloquesJs.html" ?>
 
-
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            establecerFondoDinamico(); // Llamar a la función de establecer el fondo dinámico al cargar la página
+        });
+    </script>
 
 
 </body>

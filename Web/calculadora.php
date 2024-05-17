@@ -26,6 +26,8 @@ $cholquij = $nahual." ". strval($energia);
     <?php include "blocks/bloquesCss.html" ?>
     <link rel="stylesheet" href="css/estilo.css?v=<?php echo (rand()); ?>" />
     <link rel="stylesheet" href="css/calculadora.css?v=<?php echo (rand()); ?>" />
+
+    <script src="../js/fondoDinamico.js"></script>
 </head>
 
 <body>
@@ -80,6 +82,11 @@ $cholquij = $nahual." ". strval($energia);
 
     <?php include "blocks/bloquesJs1.html" ?>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            establecerFondoDinamico(); // Llamar a la función de establecer el fondo dinámico al cargar la página
+        });
+    </script>
 </body>
 
 </html>
