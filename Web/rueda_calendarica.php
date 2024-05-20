@@ -265,14 +265,14 @@ $imagenDia = obtenerNumeroHaab($diauinal);
             const fecha = urlParams.get('fecha');
             // Si hay una fecha en la URL, calcular el Tzolk'in y girar las imágenes
             if (fecha) {
-                console.log('Fecha seleccionada:', <?php echo $fecha_consultar; ?>);
+                //console.log('Fecha seleccionada:', <?php echo $fecha_consultar; ?>);
 
-                console.log('Cholq\'ij calculado:', "<?php echo isset($cholquij) ? $cholquij : ''; ?>");
+                //console.log('Cholq\'ij calculado:', "<?php echo isset($cholquij) ? $cholquij : ''; ?>");
                 var nahual = "<?php echo $nombreNahual; ?>"; // Obtener el nahual del PHP
                 var angulo = <?php echo calcularAnguloPorNahual($nombreNahual); ?>; // Calcular el ángulo de rotación basado en el nahual
-                console.log('angulo', angulo);
+                //console.log('angulo', angulo);
                 var anguloNum = <?php echo calcularAnguloPorNumero($dia); ?>;
-                console.log('anguloNumero', anguloNum);
+                //console.log('anguloNumero', anguloNum);
 
 
                 var imagen = document.querySelector(".imagen-numeros");
