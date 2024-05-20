@@ -322,7 +322,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   text-transform: uppercase;
   outline: none;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .nav-menu > li {
@@ -417,3 +417,23 @@ h1, h2, h3, h4, h5, h6 {
   color: #ccc;
 }
 
+.nav-item {
+  display: flex;
+  align-items: center; /* Alinea verticalmente el icono y el texto */
+}
+
+.nav-item .icon {
+  width: 30px; /* Ancho de la imagen */
+  height: 30px; /* Altura de la imagen */
+  margin-top: -10px;
+  margin-right: 1px; /* Ajusta el espacio entre la imagen y el texto */
+}
+
+.icon {
+  width: 50px; /* Ancho de la imagen */
+  height: 50px; /* Altura de la imagen */
+  margin-top: 5px; /* Desplaza la imagen hacia abajo */
+  display: block; /* Asegura que la imagen se comporte como un bloque, para que los márgenes se apliquen correctamente */
+  margin-left: auto; /* Centra la imagen horizontalmente */
+  margin-right: auto; /* Centra la imagen horizontalmente */
+}

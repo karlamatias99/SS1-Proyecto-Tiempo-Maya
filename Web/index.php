@@ -38,7 +38,7 @@ $cholquij = $nahual . " " . strval($energia);
   <?php include "NavBar.php" ?>
   <div>
     <section id="inicio" class="inicio">
-      <div id="inicioContainer" class="inicio-container">
+      <id="inicioContainer" class="inicio-container">
         <h1><br><br>Bienvenido al Tiempo Maya</h1>
         <div id='formulario' style="padding: 15px; width: auto;">
           <h5 style="color: whitesmoke;">Calendario Haab : <?php echo isset($haab) ? $haab : ''; ?></h5>
@@ -46,8 +46,8 @@ $cholquij = $nahual . " " . strval($energia);
           <h5 style="color: whitesmoke;">Cuenta Larga : <?php echo isset($cuenta_larga) ? $cuenta_larga : ''; ?></h5>
           <label style="color: whitesmoke;"><?php echo isset($fecha_consultar) ? $fecha_consultar : ''; ?></label>
         </div>
-      </div>
-    </section>
+  </div>
+  </section>
   </div>
 
 
@@ -55,7 +55,7 @@ $cholquij = $nahual . " " . strval($energia);
 
 
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
       establecerFondoDinamico(); // Llamar a la función de establecer el fondo dinámico al cargar la página
     });
   </script>

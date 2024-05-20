@@ -15,6 +15,7 @@ $periodosNav = $conn->query("SELECT nombre FROM tiempo_maya.periodo order by ord
   <div class="container">
     <nav class="navbar navbar-expand-lg" id="nav-menu-container">
       <div class="container-fluid">
+      <img src="../img/guerrero.png" alt="icon" class="icon">
         <a id="title" class="navbar-brand" href="index.php"
           style="color: white;font-size: 20px;"><strong>TIEMPO</strong> MAYA</a>
         <button class="navbar-toggler" type="button" onclick="rellenar()" data-toggle="collapse"
@@ -24,6 +25,7 @@ $periodosNav = $conn->query("SELECT nombre FROM tiempo_maya.periodo order by ord
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <ul class="navbar-nav nav-menu">
+            
             <li>
               <a class="nav-link" href="models/paginaModelo.php?pagina=Calendario Haab">Calendario Haab
                 &nbsp;&nbsp;&nbsp;&nbsp; </a>
@@ -112,14 +114,18 @@ $periodosNav = $conn->query("SELECT nombre FROM tiempo_maya.periodo order by ord
               </ul>
             </li>
             <li class="nav-item">
+            <img src="../img/calendario (1).png" alt="icon" class="icon">
               <a class="nav-link" href="rueda_calendarica.php">Rueda Calendarica</a>
 
             </li>
             <li class="nav-item">
+            <img src="../img/plato.png" alt="icon" class="icon">
               <a class="nav-link" href="cuentaLarga_grafica.php">Cuenta Larga Grafica</a>
 
             </li>
-            <li class="nav-item"><a class="nav-link" href="calculadora.php">Calculadora</a></li>
+            <li class="nav-item">
+            <img src="../img/abaco.png" alt="icon" class="icon">
+              <a class="nav-link" href="calculadora.php">Calculadora</a></li>
 
           </ul>
         </div>
